@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/hero_image_desc" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hero_name_placeholder"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/heroRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hero_role_placeholder"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
